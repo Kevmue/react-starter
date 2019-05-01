@@ -1,0 +1,16 @@
+steps:
+    # Install
+    - name: 'gcr.io/cloud-builders/npm'
+      args: ['install']
+    # Test
+    - name: 'gcr.io/cloud-builders/npm'
+      args: ['run', 'test:ci']
+    # Lint
+    - name: 'gcr.io/cloud-builders/npm'
+      args: ['run', 'lint-ts']
+    # Build
+    - name: 'gcr.io/cloud-builders/npm'
+      args: ['run', 'build']
+    # Deploy
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args: ['app', 'deploy']

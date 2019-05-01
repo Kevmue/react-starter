@@ -1,0 +1,20 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# development purpose
+default_expiration: "60s"
+
+handlers:
+- url: /
+  static_files: build/index.html
+  upload: build/index.html
+  secure: always
+
+- url: /(.*\.(gif|png|jpg|js|css))
+  static_files: build/\1
+  upload: build/.*\.(gif|png|jpg|js|css)
+  secure: always
+
+skip_files:
+- ^(?!build)

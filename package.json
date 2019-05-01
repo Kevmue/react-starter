@@ -1,0 +1,59 @@
+{
+  "name": "react-starter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/react": "^16.8.10",
+    "@types/react-dom": "^16.8.3",
+    "babel-plugin-import": "^1.11.0",
+    "customize-cra": "^0.2.12",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "lodash": "^4.17.11",
+    "navi": "^0.12.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-app-rewired": "^2.1.1",
+    "react-busy-indicator": "1.0.0",
+    "react-device-detect": "^1.6.2",
+    "react-dom": "^16.8.6",
+    "react-navi": "^0.12.4",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-window-size": "latest",
+    "redux": "^4.0.1",
+    "typescript": "^3.3.4000"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "test:ci": "npm test -- --watchAll=false",
+    "test:coverage": "npm test -- --coverage",
+    "eject": "react-app-rewired eject",
+    "lint-ts": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "lint-ts-fix": "tslint --fix  -c tslint.json 'src/**/*.{ts,tsx}'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/lodash": "^4.14.123",
+    "@types/react-router": "^4.4.5",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/react-window-size": "^1.2.0",
+    "prettier": "^1.16.4",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0"
+  }
+}
